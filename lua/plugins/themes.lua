@@ -1,3 +1,5 @@
 return {
-	'catppuccin/nvim',
+	"catppuccin/nvim",
+	"kvrohit/substrata.nvim",
+	"ellisonleao/gruvbox.nvim",
 }
