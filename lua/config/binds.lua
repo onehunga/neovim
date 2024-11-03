@@ -13,7 +13,6 @@ function ibind(key, cmd)
 end
 
 bind("<C-e>", ":Neotree toggle<cr>")
-bind("<C-s>", ": toggle<cr>")
 ibind("<A-,>", ":BufferLineCyclePrev<cr>")
 ibind("<A-.>", ":BufferLineCycleNext<cr>")
 bind("<A-q>", ":bw<cr>")
@@ -21,7 +20,12 @@ bind("<C-f>", ":Telescope find_files<cr>")
 bind("<leader>g", "<cmd>lua _Lazygit_toggle()<cr>")
 bind("<leader>a", "<cmd>CodeActionMenu<cr>")
 
+bind("<leader>op", ":Neotree toggle<cr>")
+
 bind("<leader>ff", ":Telescope find_files<cr>")
 bind("<leader>fd", ":Telescope lsp_document_symbols<cr>")
 bind("<leader>fw", ":Telescope lsp_workspace_symbols<cr>")
 bind("<leader>fg", ":Telescope live_grep<cr>")
+
+bind("<leader>bb", ":Telescope buffers<cr>")
+bind("<leader>bk", ":bdelete<cr>")
