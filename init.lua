@@ -7,7 +7,7 @@ require("config.lazy")
 
 require("lazy").setup("plugins")
 
-vim.cmd([[ colorscheme gruvbox ]])
+vim.cmd([[ colorscheme gruvbox-material ]])
 
 if vim.g.neovide then
 	vim.o.guifont = "Agave Nerd Font:h16" -- text below applies for VimScript
