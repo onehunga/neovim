@@ -1,8 +1,12 @@
 return {
 	"nvim-treesitter/nvim-treesitter",
-	opts = {
-		highlight = {
-			enable = true,
-		},
-	},
+	config = function()
+		require("nvim-treesitter.configs").setup({
+			modules = {},
+			sync_install = true,
+			highlight = {
+				enable = true,
+			},
+		})
+	end,
 }
