@@ -29,3 +29,17 @@ bind("<leader>fg", ":Telescope live_grep<cr>")
 
 bind("<leader>bb", ":Telescope buffers<cr>")
 bind("<leader>bk", ":bdelete<cr>")
+
+-- Debugging
+keymap("n", "<F5>", ":lua require'dap'.continue()<CR>", opts)
+keymap("n", "<F10>", ":lua require'dap'.step_over()<CR>", opts)
+keymap("n", "<F11>", ":lua require'dap'.step_into()<CR>", opts)
+keymap("n", "<F12>", ":lua require'dap'.step_out()<CR>", opts)
+keymap("n", "<leader>db", ":lua require'dap'.toggle_breakpoint()<CR>", opts)
+keymap("n", "<leader>dB", ":lua require'dap'.set_breakpoint(vim.fn.input('Breakpoint Condition: '))<CR>", opts)
+keymap("n", "<leader>lp", ":lua require'dap'.set_breakpoint(nil, nil, vim.fn.input('Log point message: '))<CR>", opts)
+keymap("n", "<leader>dr", ":lua require'dap'.repl.open()<CR>", opts)
+keymap("n", "<leader>dt", ":lua require 'dapui'.toggle()<CR>", opts)
+vim.keymap.set({ "n", "v" }, "<Leader>dH", function()
+	require("dap.ui.widgets").hover()
+end)

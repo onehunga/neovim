@@ -7,6 +7,7 @@ return {
 			build = 'make'
 		}
 	},
+	lazy = true,
 	opts = {
 		defaults = {
 			mappings = {
