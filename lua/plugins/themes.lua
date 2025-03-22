@@ -5,4 +5,5 @@ return {
 	"sainnhe/gruvbox-material",
 	"jackplus-xyz/binary.nvim",
 	"tredstart/batman.nvim",
+	"yorumicolors/yorumi.nvim",
 }
