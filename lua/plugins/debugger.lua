@@ -6,9 +6,6 @@ return {
 			dependencies = {
 				"nvim-neotest/nvim-nio",
 			},
-			config = function()
-				require("dapui").setup()
-			end,
 		},
 	},
 	config = function()
@@ -44,5 +41,13 @@ return {
 			"DapStopped",
 			{ text = "", texthl = "yellow", linehl = "DapStopped", numhl = "DapStopped" }
 		)
+
+		local dapui = require("dapui")
+		dapui.setup({
+			layouts = {
+				{ elements = { "stacks", "scopes" }, size = 0.3, position = "left" },
+			},
+		})
+		dapui.open({ layout = 0 })
 	end,
 }

@@ -1,3 +1,6 @@
+local dapui = require("dapui")
+local window_util = require("util.windows")
+
 local opts = { noremap = true, silent = true }
 local keymap = vim.api.nvim_set_keymap
 
@@ -22,6 +25,7 @@ bind("<leader>a", "<cmd>CodeActionMenu<cr>")
 
 bind("<leader>op", ":Neotree toggle<cr>")
 
+bind("<leader><leader>", ":Telescope find_files<cr>")
 bind("<leader>ff", ":Telescope find_files<cr>")
 bind("<leader>fd", ":Telescope lsp_document_symbols<cr>")
 bind("<leader>fw", ":Telescope lsp_workspace_symbols<cr>")
@@ -40,6 +44,18 @@ keymap("n", "<leader>dB", ":lua require'dap'.set_breakpoint(vim.fn.input('Breakp
 keymap("n", "<leader>lp", ":lua require'dap'.set_breakpoint(nil, nil, vim.fn.input('Log point message: '))<CR>", opts)
 keymap("n", "<leader>dr", ":lua require'dap'.repl.open()<CR>", opts)
 keymap("n", "<leader>dt", ":lua require 'dapui'.toggle()<CR>", opts)
+
+keymap("n", "<leader>dl", ":lua _SwitchToScopes()<CR>", opts)
+keymap("n", "<leader>ds", ":lua _SwitchToStacks()<CR>", opts)
+
+function _SwitchToScopes()
+	window_util.move_to_buffer(dapui.elements.scopes.buffer())
+end
+
+function _SwitchToStacks()
+	window_util.move_to_buffer(dapui.elements.stacks.buffer())
+end
+
 vim.keymap.set({ "n", "v" }, "<Leader>dH", function()
 	require("dap.ui.widgets").hover()
 end)
