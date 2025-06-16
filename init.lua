@@ -5,4 +5,4 @@ require("config.lazy")
 require("config.keybinds")
 require("config.opts")
 
-vim.cmd([[ colorscheme gruvbox ]])
+vim.cmd([[ colorscheme onedark ]])

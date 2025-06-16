@@ -3,4 +3,6 @@ local mini_indent = require 'mini.indentscope'
 
 mini_pairs.setup()
 
-mini_indent.setup()
+mini_indent.setup {
+	symbol = '│'
+}

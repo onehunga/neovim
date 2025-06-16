@@ -23,6 +23,10 @@ return {
 			"MunifTanjim/nui.nvim",
 		},
 	},
+	{
+		'lewis6991/gitsigns.nvim',
+		opts = {},
+	},
 
 	"xiyaowong/transparent.nvim",
 }
