@@ -4,5 +4,6 @@ return {
 	"projekt0n/github-nvim-theme",
 	"blazkowolf/gruber-darker.nvim",
 
-	"navarasu/onedark.nvim"
+	"navarasu/onedark.nvim",
+	"Mofiqul/dracula.nvim"
 }

@@ -9,6 +9,6 @@ vim.o.number = true
 vim.o.relativenumber = true
 vim.o.clipboard = "unnamedplus"
 
-vim.o.laststatus = 3
+vim.g.laststatus = 3
 
 vim.g.rust_recommended_style = false
