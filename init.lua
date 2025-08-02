@@ -5,5 +5,5 @@ require("config.lazy")
 require("config.keybinds")
 require("config.opts")
 
-vim.cmd([[ colorscheme dracula ]])
+vim.cmd([[ colorscheme gruvbox ]])
 vim.cmd([[ set laststatus=3 ]])

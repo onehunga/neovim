@@ -65,4 +65,5 @@ vim.api.nvim_create_autocmd('LspAttach', {
 	end
 })
 
-
+vim.lsp.enable("ocamllsp")
+vim.lsp.enable("zls")
