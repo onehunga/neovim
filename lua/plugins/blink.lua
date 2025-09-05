@@ -1,3 +1,5 @@
+return {}
+--[[
 return {
 	'saghen/blink.cmp',
 	dependencies = {
@@ -6,7 +8,6 @@ return {
 	version = '1.*',
 
 	---@module 'blink.cmp'
-	---@type blink.cmp.Config
 	opts = {
 		-- All presets have the following mappings:
 		-- C-space: Open menu or open docs if already open
@@ -17,7 +18,7 @@ return {
 		-- See :h blink-cmp-config-keymap for defining your own keymap
 		keymap = {
 			preset = 'default',
-			['<C-#>'] = { 'select_and_accept' },
+			['<C-Enter>'] = { 'select_and_accept' },
 		},
 
 		appearance = {
@@ -35,3 +36,4 @@ return {
 	},
 	opts_extend = { "sources.default" }
 }
+]] --
