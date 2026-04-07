@@ -1,0 +1,7 @@
+require 'plugins.cmp'
+require 'plugins.lsp'
+require 'plugins.mini'
+require 'plugins.neotree'
+require 'plugins.telescope'
+require 'plugins.themes'
+require 'plugins.which_key'
