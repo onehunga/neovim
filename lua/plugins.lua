@@ -1,4 +1,5 @@
 require 'plugins.cmp'
+require 'plugins.formatter'
 require 'plugins.lsp'
 require 'plugins.mini'
 require 'plugins.neotree'
