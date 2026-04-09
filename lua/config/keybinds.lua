@@ -10,12 +10,17 @@ wk.add({
 	},
 	{
 		'<leader>o',
-		group = 'open'
+		group = 'open',
+		{
+			'<leader>op',
+			'<cmd>:Neotree toggle position=float<cr>',
+			desc = 'Toggle Tree'
+		},
 	},
 	{
-		'<leader>op',
-		'<cmd>:Neotree toggle position=float<cr>',
-		desc = 'Toggle Tree'
+		'<leader>g',
+		'<cmd>lua _Lazygit_toggle()<cr>',
+		desc = 'Open Lazygit'
 	},
 	{
 		'<leader>f',
