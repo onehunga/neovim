@@ -1,5 +1,6 @@
 require 'config.lsp.mason'
 require 'config.lsp.config.lua'
+require 'config.lsp.config.tinymist'
 require 'config.lsp.custom'
 
 local signs = {
