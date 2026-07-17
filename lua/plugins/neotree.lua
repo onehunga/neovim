@@ -9,7 +9,3 @@ vim.pack.add({
 	-- optional, but recommended
 	"https://github.com/nvim-tree/nvim-web-devicons",
 })
-
-require 'neo-tree'.setup {
-	use_float = true,
-}

@@ -13,7 +13,7 @@ wk.add({
 		group = 'open',
 		{
 			'<leader>op',
-			'<cmd>:Neotree toggle position=float<cr>',
+			'<cmd>:Neotree toggle<cr>',
 			desc = 'Toggle Tree'
 		},
 	},
@@ -58,6 +58,6 @@ wk.add({
 	},
 	{
 		'<C-e>',
-		'<cmd>:Neotree toggle position=float<cr>',
+		'<cmd>:Neotree toggle<cr>',
 	}
 })
