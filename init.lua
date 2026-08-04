@@ -7,4 +7,4 @@ require 'config.cmp'
 
 require 'config.ui'
 
-vim.cmd [[ colorscheme gruvbox-material ]]
+vim.cmd [[ colorscheme gruvbox ]]
