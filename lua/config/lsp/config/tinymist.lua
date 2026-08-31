@@ -1,5 +1,10 @@
 vim.lsp.config("tinymist", {
 	settings = {
+		rootPath = vim.fn.getcwd(),
+
+		typstExtraArgs = {
+			"main.typ"
+		}
 	}
 })
 
